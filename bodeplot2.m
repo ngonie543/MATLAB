@@ -1,0 +1,6 @@
+x = linspace(-2,2,1000)
+y = (x+1).*(x<=-1 & x>-2) + 1.*(x<=0 & x>-1) + 2.*(x<=1 & x>0) + (-1.*x+2).*(x<2 & x>1)
+plot(x,y)
+title('Plot for ustep and uramp (njn7)')
+xlabel('time')
+ylabel('x(t)')

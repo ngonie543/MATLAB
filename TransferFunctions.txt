@@ -1,0 +1,774 @@
+
+disp('Creating G1tf')
+Creating G1tf
+G1tf = tf(G1)
+
+G1tf =
+ 
+                  200 s^2 + 100 s + 1200
+  ------------------------------------------------------
+  20000 s^4 + 30000 s^3 + 200000 s^2 + 120000 s + 440000
+ 
+Continuous-time transfer function.
+
+disp('Getting G1tf')
+Getting G1tf
+get(G1tf)
+             num: {[0 0 200 100 1200]}
+             den: {[20000 30000 200000 120000 440000]}
+        Variable: 's'
+         ioDelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+              Ts: 0
+        TimeUnit: 'seconds'
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1x1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1x1 struct]
+            Name: ''
+           Notes: {}
+        UserData: []
+    SamplingGrid: [1x1 struct]
+
+
+disp('Creating G1zpk')
+Creating G1zpk
+G1zpk = zpk(G1);
+disp('Getting G1zpk')
+Getting G1zpk
+get(G1zpk)
+                z: {[2x1 double]}
+                p: {[4x1 double]}
+                k: 0.0100
+    DisplayFormat: 'roots'
+         Variable: 's'
+          ioDelay: 0
+       InputDelay: 0
+      OutputDelay: 0
+               Ts: 0
+         TimeUnit: 'seconds'
+        InputName: {''}
+        InputUnit: {''}
+       InputGroup: [1x1 struct]
+       OutputName: {''}
+       OutputUnit: {''}
+      OutputGroup: [1x1 struct]
+             Name: ''
+            Notes: {}
+         UserData: []
+     SamplingGrid: [1x1 struct]
+
+
+% G2
+disp('Creating G2tf')
+Creating G2tf
+G2tf = tf(G2)
+
+G2tf =
+ 
+                       100 s + 200
+  ------------------------------------------------------
+  20000 s^4 + 30000 s^3 + 200000 s^2 + 120000 s + 440000
+ 
+Continuous-time transfer function.
+
+disp('Getting G2tf')
+Getting G2tf
+get(G2tf)
+             num: {[0 0 0 100 200]}
+             den: {[20000 30000 200000 120000 440000]}
+        Variable: 's'
+         ioDelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+              Ts: 0
+        TimeUnit: 'seconds'
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1x1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1x1 struct]
+            Name: ''
+           Notes: {}
+        UserData: []
+    SamplingGrid: [1x1 struct]
+
+
+disp('Creating G2zpk')
+Creating G2zpk
+G2zpk = zpk(G2);
+disp('Getting G2zpk')
+Getting G2zpk
+get(G2zpk)
+                z: {[-2]}
+                p: {[4x1 double]}
+                k: 0.0050
+    DisplayFormat: 'roots'
+         Variable: 's'
+          ioDelay: 0
+       InputDelay: 0
+      OutputDelay: 0
+               Ts: 0
+         TimeUnit: 'seconds'
+        InputName: {''}
+        InputUnit: {''}
+       InputGroup: [1x1 struct]
+       OutputName: {''}
+       OutputUnit: {''}
+      OutputGroup: [1x1 struct]
+             Name: ''
+            Notes: {}
+         UserData: []
+     SamplingGrid: [1x1 struct]
+
+
+diary off
+
+disp('Creating G1tf')
+Creating G1tf
+G1tf = tf(G1)
+
+G1tf =
+ 
+                  200 s^2 + 100 s + 1200
+  ------------------------------------------------------
+  20000 s^4 + 30000 s^3 + 200000 s^2 + 120000 s + 440000
+ 
+Continuous-time transfer function.
+
+disp('Getting G1tf')
+Getting G1tf
+get(G1tf)
+             num: {[0 0 200 100 1200]}
+             den: {[20000 30000 200000 120000 440000]}
+        Variable: 's'
+         ioDelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+              Ts: 0
+        TimeUnit: 'seconds'
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1x1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1x1 struct]
+            Name: ''
+           Notes: {}
+        UserData: []
+    SamplingGrid: [1x1 struct]
+
+
+disp('Creating G1zpk')
+Creating G1zpk
+G1zpk = zpk(G1);
+disp('Getting G1zpk')
+Getting G1zpk
+get(G1zpk)
+                z: {[2x1 double]}
+                p: {[4x1 double]}
+                k: 0.0100
+    DisplayFormat: 'roots'
+         Variable: 's'
+          ioDelay: 0
+       InputDelay: 0
+      OutputDelay: 0
+               Ts: 0
+         TimeUnit: 'seconds'
+        InputName: {''}
+        InputUnit: {''}
+       InputGroup: [1x1 struct]
+       OutputName: {''}
+       OutputUnit: {''}
+      OutputGroup: [1x1 struct]
+             Name: ''
+            Notes: {}
+         UserData: []
+     SamplingGrid: [1x1 struct]
+
+
+% G2
+disp('Creating G2tf')
+Creating G2tf
+G2tf = tf(G2)
+
+G2tf =
+ 
+                       100 s + 200
+  ------------------------------------------------------
+  20000 s^4 + 30000 s^3 + 200000 s^2 + 120000 s + 440000
+ 
+Continuous-time transfer function.
+
+disp('Getting G2tf')
+Getting G2tf
+get(G2tf)
+             num: {[0 0 0 100 200]}
+             den: {[20000 30000 200000 120000 440000]}
+        Variable: 's'
+         ioDelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+              Ts: 0
+        TimeUnit: 'seconds'
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1x1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1x1 struct]
+            Name: ''
+           Notes: {}
+        UserData: []
+    SamplingGrid: [1x1 struct]
+
+
+disp('Creating G2zpk')
+Creating G2zpk
+G2zpk = zpk(G2);
+disp('Getting G2zpk')
+Getting G2zpk
+get(G2zpk)
+                z: {[-2]}
+                p: {[4x1 double]}
+                k: 0.0050
+    DisplayFormat: 'roots'
+         Variable: 's'
+          ioDelay: 0
+       InputDelay: 0
+      OutputDelay: 0
+               Ts: 0
+         TimeUnit: 'seconds'
+        InputName: {''}
+        InputUnit: {''}
+       InputGroup: [1x1 struct]
+       OutputName: {''}
+       OutputUnit: {''}
+      OutputGroup: [1x1 struct]
+             Name: ''
+            Notes: {}
+         UserData: []
+     SamplingGrid: [1x1 struct]
+
+
+diary off
+
+disp('Creating G1tf')
+Creating G1tf
+G1tf = tf(G1)
+
+G1tf =
+ 
+                  200 s^2 + 100 s + 1200
+  ------------------------------------------------------
+  20000 s^4 + 30000 s^3 + 200000 s^2 + 120000 s + 440000
+ 
+Continuous-time transfer function.
+
+disp('Getting G1tf')
+Getting G1tf
+get(G1tf)
+             num: {[0 0 200 100 1200]}
+             den: {[20000 30000 200000 120000 440000]}
+        Variable: 's'
+         ioDelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+              Ts: 0
+        TimeUnit: 'seconds'
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1x1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1x1 struct]
+            Name: ''
+           Notes: {}
+        UserData: []
+    SamplingGrid: [1x1 struct]
+
+
+disp('Creating G1zpk')
+Creating G1zpk
+G1zpk = zpk(G1);
+disp('Getting G1zpk')
+Getting G1zpk
+get(G1zpk)
+                z: {[2x1 double]}
+                p: {[4x1 double]}
+                k: 0.0100
+    DisplayFormat: 'roots'
+         Variable: 's'
+          ioDelay: 0
+       InputDelay: 0
+      OutputDelay: 0
+               Ts: 0
+         TimeUnit: 'seconds'
+        InputName: {''}
+        InputUnit: {''}
+       InputGroup: [1x1 struct]
+       OutputName: {''}
+       OutputUnit: {''}
+      OutputGroup: [1x1 struct]
+             Name: ''
+            Notes: {}
+         UserData: []
+     SamplingGrid: [1x1 struct]
+
+
+% G2
+disp('Creating G2tf')
+Creating G2tf
+G2tf = tf(G2)
+
+G2tf =
+ 
+                       100 s + 200
+  ------------------------------------------------------
+  20000 s^4 + 30000 s^3 + 200000 s^2 + 120000 s + 440000
+ 
+Continuous-time transfer function.
+
+disp('Getting G2tf')
+Getting G2tf
+get(G2tf)
+             num: {[0 0 0 100 200]}
+             den: {[20000 30000 200000 120000 440000]}
+        Variable: 's'
+         ioDelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+              Ts: 0
+        TimeUnit: 'seconds'
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1x1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1x1 struct]
+            Name: ''
+           Notes: {}
+        UserData: []
+    SamplingGrid: [1x1 struct]
+
+
+disp('Creating G2zpk')
+Creating G2zpk
+G2zpk = zpk(G2);
+disp('Getting G2zpk')
+Getting G2zpk
+get(G2zpk)
+                z: {[-2]}
+                p: {[4x1 double]}
+                k: 0.0050
+    DisplayFormat: 'roots'
+         Variable: 's'
+          ioDelay: 0
+       InputDelay: 0
+      OutputDelay: 0
+               Ts: 0
+         TimeUnit: 'seconds'
+        InputName: {''}
+        InputUnit: {''}
+       InputGroup: [1x1 struct]
+       OutputName: {''}
+       OutputUnit: {''}
+      OutputGroup: [1x1 struct]
+             Name: ''
+            Notes: {}
+         UserData: []
+     SamplingGrid: [1x1 struct]
+
+
+diary off
+
+disp('Creating G1tf')
+Creating G1tf
+G1tf = tf(G1)
+
+G1tf =
+ 
+                  200 s^2 + 100 s + 1200
+  ------------------------------------------------------
+  20000 s^4 + 30000 s^3 + 200000 s^2 + 120000 s + 440000
+ 
+Continuous-time transfer function.
+
+disp('Getting G1tf')
+Getting G1tf
+get(G1tf)
+             num: {[0 0 200 100 1200]}
+             den: {[20000 30000 200000 120000 440000]}
+        Variable: 's'
+         ioDelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+              Ts: 0
+        TimeUnit: 'seconds'
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1x1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1x1 struct]
+            Name: ''
+           Notes: {}
+        UserData: []
+    SamplingGrid: [1x1 struct]
+
+
+disp('Creating G1zpk')
+Creating G1zpk
+G1zpk = zpk(G1);
+disp('Getting G1zpk')
+Getting G1zpk
+get(G1zpk)
+                z: {[2x1 double]}
+                p: {[4x1 double]}
+                k: 0.0100
+    DisplayFormat: 'roots'
+         Variable: 's'
+          ioDelay: 0
+       InputDelay: 0
+      OutputDelay: 0
+               Ts: 0
+         TimeUnit: 'seconds'
+        InputName: {''}
+        InputUnit: {''}
+       InputGroup: [1x1 struct]
+       OutputName: {''}
+       OutputUnit: {''}
+      OutputGroup: [1x1 struct]
+             Name: ''
+            Notes: {}
+         UserData: []
+     SamplingGrid: [1x1 struct]
+
+
+% G2
+disp('Creating G2tf')
+Creating G2tf
+G2tf = tf(G2)
+
+G2tf =
+ 
+                       100 s + 200
+  ------------------------------------------------------
+  20000 s^4 + 30000 s^3 + 200000 s^2 + 120000 s + 440000
+ 
+Continuous-time transfer function.
+
+disp('Getting G2tf')
+Getting G2tf
+get(G2tf)
+             num: {[0 0 0 100 200]}
+             den: {[20000 30000 200000 120000 440000]}
+        Variable: 's'
+         ioDelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+              Ts: 0
+        TimeUnit: 'seconds'
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1x1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1x1 struct]
+            Name: ''
+           Notes: {}
+        UserData: []
+    SamplingGrid: [1x1 struct]
+
+
+disp('Creating G2zpk')
+Creating G2zpk
+G2zpk = zpk(G2);
+disp('Getting G2zpk')
+Getting G2zpk
+get(G2zpk)
+                z: {[-2]}
+                p: {[4x1 double]}
+                k: 0.0050
+    DisplayFormat: 'roots'
+         Variable: 's'
+          ioDelay: 0
+       InputDelay: 0
+      OutputDelay: 0
+               Ts: 0
+         TimeUnit: 'seconds'
+        InputName: {''}
+        InputUnit: {''}
+       InputGroup: [1x1 struct]
+       OutputName: {''}
+       OutputUnit: {''}
+      OutputGroup: [1x1 struct]
+             Name: ''
+            Notes: {}
+         UserData: []
+     SamplingGrid: [1x1 struct]
+
+
+diary off
+
+disp('Creating G1tf')
+Creating G1tf
+G1tf = tf(G1)
+
+G1tf =
+ 
+                  200 s^2 + 100 s + 1200
+  ------------------------------------------------------
+  20000 s^4 + 30000 s^3 + 200000 s^2 + 120000 s + 440000
+ 
+Continuous-time transfer function.
+
+disp('Getting G1tf')
+Getting G1tf
+get(G1tf)
+             num: {[0 0 200 100 1200]}
+             den: {[20000 30000 200000 120000 440000]}
+        Variable: 's'
+         ioDelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+              Ts: 0
+        TimeUnit: 'seconds'
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1x1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1x1 struct]
+            Name: ''
+           Notes: {}
+        UserData: []
+    SamplingGrid: [1x1 struct]
+
+
+disp('Creating G1zpk')
+Creating G1zpk
+G1zpk = zpk(G1);
+disp('Getting G1zpk')
+Getting G1zpk
+get(G1zpk)
+                z: {[2x1 double]}
+                p: {[4x1 double]}
+                k: 0.0100
+    DisplayFormat: 'roots'
+         Variable: 's'
+          ioDelay: 0
+       InputDelay: 0
+      OutputDelay: 0
+               Ts: 0
+         TimeUnit: 'seconds'
+        InputName: {''}
+        InputUnit: {''}
+       InputGroup: [1x1 struct]
+       OutputName: {''}
+       OutputUnit: {''}
+      OutputGroup: [1x1 struct]
+             Name: ''
+            Notes: {}
+         UserData: []
+     SamplingGrid: [1x1 struct]
+
+
+% G2
+disp('Creating G2tf')
+Creating G2tf
+G2tf = tf(G2)
+
+G2tf =
+ 
+                       100 s + 200
+  ------------------------------------------------------
+  20000 s^4 + 30000 s^3 + 200000 s^2 + 120000 s + 440000
+ 
+Continuous-time transfer function.
+
+disp('Getting G2tf')
+Getting G2tf
+get(G2tf)
+             num: {[0 0 0 100 200]}
+             den: {[20000 30000 200000 120000 440000]}
+        Variable: 's'
+         ioDelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+              Ts: 0
+        TimeUnit: 'seconds'
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1x1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1x1 struct]
+            Name: ''
+           Notes: {}
+        UserData: []
+    SamplingGrid: [1x1 struct]
+
+
+disp('Creating G2zpk')
+Creating G2zpk
+G2zpk = zpk(G2);
+disp('Getting G2zpk')
+Getting G2zpk
+get(G2zpk)
+                z: {[-2]}
+                p: {[4x1 double]}
+                k: 0.0050
+    DisplayFormat: 'roots'
+         Variable: 's'
+          ioDelay: 0
+       InputDelay: 0
+      OutputDelay: 0
+               Ts: 0
+         TimeUnit: 'seconds'
+        InputName: {''}
+        InputUnit: {''}
+       InputGroup: [1x1 struct]
+       OutputName: {''}
+       OutputUnit: {''}
+      OutputGroup: [1x1 struct]
+             Name: ''
+            Notes: {}
+         UserData: []
+     SamplingGrid: [1x1 struct]
+
+
+diary off
+
+disp('Creating G1tf')
+Creating G1tf
+G1tf = tf(G1)
+
+G1tf =
+ 
+                  200 s^2 + 100 s + 1200
+  ------------------------------------------------------
+  20000 s^4 + 30000 s^3 + 200000 s^2 + 120000 s + 440000
+ 
+Continuous-time transfer function.
+
+disp('Getting G1tf')
+Getting G1tf
+get(G1tf)
+             num: {[0 0 200 100 1200]}
+             den: {[20000 30000 200000 120000 440000]}
+        Variable: 's'
+         ioDelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+              Ts: 0
+        TimeUnit: 'seconds'
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1x1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1x1 struct]
+            Name: ''
+           Notes: {}
+        UserData: []
+    SamplingGrid: [1x1 struct]
+
+
+disp('Creating G1zpk')
+Creating G1zpk
+G1zpk = zpk(G1);
+disp('Getting G1zpk')
+Getting G1zpk
+get(G1zpk)
+                z: {[2x1 double]}
+                p: {[4x1 double]}
+                k: 0.0100
+    DisplayFormat: 'roots'
+         Variable: 's'
+          ioDelay: 0
+       InputDelay: 0
+      OutputDelay: 0
+               Ts: 0
+         TimeUnit: 'seconds'
+        InputName: {''}
+        InputUnit: {''}
+       InputGroup: [1x1 struct]
+       OutputName: {''}
+       OutputUnit: {''}
+      OutputGroup: [1x1 struct]
+             Name: ''
+            Notes: {}
+         UserData: []
+     SamplingGrid: [1x1 struct]
+
+
+% G2
+disp('Creating G2tf')
+Creating G2tf
+G2tf = tf(G2)
+
+G2tf =
+ 
+                       100 s + 200
+  ------------------------------------------------------
+  20000 s^4 + 30000 s^3 + 200000 s^2 + 120000 s + 440000
+ 
+Continuous-time transfer function.
+
+disp('Getting G2tf')
+Getting G2tf
+get(G2tf)
+             num: {[0 0 0 100 200]}
+             den: {[20000 30000 200000 120000 440000]}
+        Variable: 's'
+         ioDelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+              Ts: 0
+        TimeUnit: 'seconds'
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1x1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1x1 struct]
+            Name: ''
+           Notes: {}
+        UserData: []
+    SamplingGrid: [1x1 struct]
+
+
+disp('Creating G2zpk')
+Creating G2zpk
+G2zpk = zpk(G2);
+disp('Getting G2zpk')
+Getting G2zpk
+get(G2zpk)
+                z: {[-2]}
+                p: {[4x1 double]}
+                k: 0.0050
+    DisplayFormat: 'roots'
+         Variable: 's'
+          ioDelay: 0
+       InputDelay: 0
+      OutputDelay: 0
+               Ts: 0
+         TimeUnit: 'seconds'
+        InputName: {''}
+        InputUnit: {''}
+       InputGroup: [1x1 struct]
+       OutputName: {''}
+       OutputUnit: {''}
+      OutputGroup: [1x1 struct]
+             Name: ''
+            Notes: {}
+         UserData: []
+     SamplingGrid: [1x1 struct]
+
+
+diary off
